@@ -20,7 +20,8 @@ int main() {
 	// column vector b
 	Eigen::VectorXd b {{15, 10, 10}};
 
-	// Relaxation factor (experiment with values 1.1 < ω < 1.9)
+	// Relaxation factor (values are usually chosen between 1.1 - 1.9; chosen experimentally)
+	// double relaxFactor {1.0}; // the method then reduces to the Gauss-Seidel method
 	double relaxFactor {1.25};
 
 	// max. iterations to perform
