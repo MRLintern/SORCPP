@@ -31,11 +31,11 @@ int main() {
 	double tolerance {1e-6};
 
 	// call the SOR function and find the elements of the vector x
-	Eigen::VectorXd solution = SOR(A, b, relaxFactor, maxIterations, tolerance);
+	Eigen::VectorXd xVectorElements = SOR(A, b, relaxFactor, maxIterations, tolerance);
 
 	// output solution
 	std::cout<<"--------\n";
-	std::cout<<"Solution:\n"<<solution<<"\n";
+	std::cout<<"Solution:\n"<<xVectorElements<<"\n";
 	std::cout<<"--------\n";
 	
 }
