@@ -12,13 +12,13 @@ int main() {
 	// matrix A
 	Eigen::MatrixXd A {
 
-		{4, -1, 0},
-		{-1, 4, -1},
-		{0, -1, 4},
+		{8, -1, 0},
+		{-1, 8, -1},
+		{0, -1, 8},
 	};
 
 	// column vector b
-	Eigen::VectorXd b {{15, 10, 10}};
+	Eigen::VectorXd b {{16, 12, 12}};
 
 	// Relaxation factor (values are usually chosen between 1.1 - 1.9; chosen experimentally)
 	// double relaxFactor {1.0}; // the method then reduces to the Gauss-Seidel method
