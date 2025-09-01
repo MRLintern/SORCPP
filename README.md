@@ -15,9 +15,9 @@ This is a demo. of how to implement the SOR algorithm in C++
 * __1 < w < 2__: __over-relaxation__ (__faster convergence__, but can diverge if __ω__ is too large).
 
 #### Convergence:
-* __SOR__ converges faster than __Gauss-Seidel__ when __ω__ is chosen optimally.
+* __SOR__ converges faster than __Gauss-Seidel__ when __w__ is chosen optimally.
 * Best suited for __Symmetric Positive-Definite__ or __Diagonally Dominant Matrices__.
-* Convergence depends on the ___Spectral Radius___ of the __Iteration Matrix__; ideally, choose __ω__ to minimize it.
+* Convergence depends on the ___Spectral Radius___ of the __Iteration Matrix__; ideally, choose __w__ to minimize it.
 
 ### Advantages:
 * Faster convergence than __Jacobi__ and __Gauss-Seidel__ methods when tuned properly.
@@ -25,7 +25,7 @@ This is a demo. of how to implement the SOR algorithm in C++
 
 ### Disadvantages:
 
-* Requires careful tuning of __ω__.
+* Requires careful tuning of __w__.
 * __Not guaranteed__ to converge for all systems.
 * Performance degrades on modern architectures unless parallelized carefully (e.g., using ___Red-Black Ordering___ for structured grids).
 
