@@ -10,9 +10,9 @@ This is a demo. of how to implement the SOR algorithm in C++
 * The __SOR__ method __accelerates__ the __Convergence__ of the __Gauss-Seidel__ method by introducing a ___Relaxation Factor ω___, which __controls__ the __weight__ of the __update step__.
 
 #### Parameters:
-* __ω = 1__: reduces to __Gauss-Seidel__.
-* __0 < ω < 1__: __under-relaxation__ (slower but more stable).
-* __1 < ω < 2__: __over-relaxation__ (__faster convergence__, but can diverge if __ω__ is too large).
+* __w = 1__: reduces to __Gauss-Seidel__.
+* __0 < w < 1__: __under-relaxation__ (slower but more stable).
+* __1 < w < 2__: __over-relaxation__ (__faster convergence__, but can diverge if __ω__ is too large).
 
 #### Convergence:
 * __SOR__ converges faster than __Gauss-Seidel__ when __ω__ is chosen optimally.
@@ -24,6 +24,7 @@ This is a demo. of how to implement the SOR algorithm in C++
 * Useful for __Sparse Systems__ arising in PDEs.
 
 ### Disadvantages:
+
 * Requires careful tuning of __ω__.
 * __Not guaranteed__ to converge for all systems.
 * Performance degrades on modern architectures unless parallelized carefully (e.g., using ___Red-Black Ordering___ for structured grids).
