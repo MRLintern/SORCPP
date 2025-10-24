@@ -7,7 +7,7 @@ This is a demo. of how to implement the SOR algorithm in C++
 ### Introduction
 
 * The ___Successive Over-Relaxation (SOR)___ method is an __iterative technique__ used to solve __systems of linear equations__, particularly those arising from the __discretization of Partial Differential Equations (PDEs)__, such as in __finite Difference__ or __Finite Element Methods__.
-* The __SOR__ method __accelerates__ the __Convergence__ of the __Gauss-Seidel__ method by introducing a ___Relaxation Factor ω___, which __controls__ the __weight__ of the __update step__.
+* The __SOR__ method __accelerates__ the __Convergence__ of the __Gauss-Seidel__ method by introducing a ___Relaxation Factor w___, which __controls__ the __weight__ of the __update step__.
 
 #### Parameters:
 * __w = 1__: reduces to __Gauss-Seidel__.
